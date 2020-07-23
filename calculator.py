@@ -21,6 +21,10 @@ class Calculator:
     def multiply(x, y):
         return x * y
 
+    @staticmethod
+    def modulus(x, y):
+        return x % y
+
     @classmethod
     def calculate(cls, option):
         if option == "+":
@@ -31,6 +35,8 @@ class Calculator:
             return cls.multiply(cls.x, cls.y)
         elif option == "/":
             return cls.divide(cls.x, cls.y)
+        elif option == "%":
+            return cls.modulus(cls.x, cls.y)
 
     @classmethod
     def take_input(cls):
@@ -47,6 +53,7 @@ if __name__ == "__main__":
         print("Enter 3 to subtract numbers")
         print("Enter 4 to multiply numbers")
         print("Enter 5 to divide numbers")
+        print("Enter 6 to divide numbers")
         function_choice = int(input())
         if function_choice == 1:
             Calculator.take_input()
@@ -58,5 +65,7 @@ if __name__ == "__main__":
             print(Calculator.calculate("*"))
         elif function_choice == 5:
             print(Calculator.calculate("/"))
+        elif function_choice == 6:
+            print(Calculator.calculate("%"))
         elif function_choice != -1:
             print("Wrong choice entered")
