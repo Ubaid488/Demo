@@ -53,7 +53,7 @@ if __name__ == "__main__":
         print("Enter 3 to subtract numbers")
         print("Enter 4 to multiply numbers")
         print("Enter 5 to divide numbers")
-        print("Enter 6 to divide numbers")
+        print("Enter 6 to get modulus of numbers")
         function_choice = int(input())
         if function_choice == 1:
             Calculator.take_input()
