@@ -69,3 +69,4 @@ if __name__ == "__main__":
             print(Calculator.calculate("%"))
         elif function_choice != -1:
             print("Wrong choice entered")
+#Done
